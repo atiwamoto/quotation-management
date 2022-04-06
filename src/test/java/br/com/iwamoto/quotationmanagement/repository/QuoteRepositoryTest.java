@@ -1,5 +1,7 @@
 package br.com.iwamoto.quotationmanagement.repository;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -8,8 +10,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import br.com.iwamoto.quotationmanagement.model.Quote;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 @DataJpaTest
 public class QuoteRepositoryTest {
 	
@@ -17,9 +17,10 @@ public class QuoteRepositoryTest {
 	private QuoteRepository quoteRepository;
 	
 	@Test
-	public void test() {		
+	public void shouldNotLoadQuotesFromInvalidStockId() {
 		List<Quote> findByStockId = quoteRepository.findByStockId("petr4");
 		assertTrue(findByStockId.isEmpty());			
 	}
 
+	
 }
