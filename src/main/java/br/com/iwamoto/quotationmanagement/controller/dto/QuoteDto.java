@@ -9,7 +9,6 @@ public class QuoteDto {
 		
 	public QuoteDto() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public QuoteDto(LocalDate date, double value) {
 		super();

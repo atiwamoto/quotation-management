@@ -12,8 +12,6 @@ import br.com.iwamoto.quotationmanagement.model.Quote;
 
 public interface QuoteRepository extends CrudRepository<Quote, UUID> {
 	
-	//List<Quote> findByStockId(UUID id);
-	
 	@Query(value = "SELECT * FROM quote q WHERE q.stock_id = :id", nativeQuery = true)
 	List<Quote> findByStockId(String id);
 	

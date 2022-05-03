@@ -12,8 +12,6 @@ import br.com.iwamoto.quotationmanagement.service.StockService;
 @EnableSpringDataWebSupport
 public class QuotationManagementApplication {
 	
-	
-
 	public static void main(String[] args) {
 		SpringApplication.run(QuotationManagementApplication.class, args);
 		StockService.registerAtStockManager();		

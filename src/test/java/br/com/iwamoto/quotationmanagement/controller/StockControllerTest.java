@@ -1,7 +1,5 @@
 package br.com.iwamoto.quotationmanagement.controller;
 
-import static org.assertj.core.api.Assertions.fail;
-
 import java.net.URI;
 
 import org.junit.jupiter.api.Test;

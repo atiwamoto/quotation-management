@@ -1,6 +1,5 @@
 package br.com.iwamoto.quotationmanagement.controller.dto;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,9 +21,6 @@ public class StockDto {
 	public StockDto(Stock stock, List<StockServiceForm> listStocks) {
 		this.id = stock.getId();
 		this.stockId = stock.getStockId();
-/*		this.description = listStocks.stream()
-									.filter(s -> s.getId().equals(this.stockId) )
-									.findAny().get().getDescription(); */
 	}
 
 	public StockDto() {
